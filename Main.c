@@ -7,8 +7,8 @@ int main()
 	{
 		sum += muge[i];
 	}
-	printf("Ortalama:%d\tDizi genisligi:%d\n", sum / (sizeof(muge) / sizeof(int)), sizeof(muge) / sizeof(int));
-	printf("Bir sayi girin:");
+	printf("Average:%d\tArray width:%d\n", sum / (sizeof(muge) / sizeof(int)), sizeof(muge) / sizeof(int));
+	printf("Enter a number:");
 	scanf_s(" %d", &take);
 	for (i = 0; i < sizeof(muge) / sizeof(int); i++)
 	{
@@ -19,11 +19,11 @@ int main()
 	}
 	if (i < sizeof(muge) / sizeof(int))
 	{
-		printf("Sayiniz dizide mevcut! Sayinizin buludugu indis: a[%d]\n", i);
+		printf("Your number exists in the array! The indices that your number stands: a[%d]\n", i);
 	}
 	else
 	{
-		printf("Uzgunum sayiniz mevcut degil!\n");
+		printf("Sorry this number doesn't exist!\n");
 	}
 
 }
